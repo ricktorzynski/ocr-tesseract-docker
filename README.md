@@ -33,4 +33,24 @@ docker run ricktorzynski/ocr-tesseract-docker
 Then open up browser to http://localhost:5000
 
 I have also deployed it to Heroku, but free account only allows 512MB of memory and this can be exceeded by the app.  But here is a URL:
-[Heroku](https://floating-castle-16480.herokuapp.com/)
+
+https://floating-castle-16480.herokuapp.com/
+
+Again, I can't guarantee that this will work - I will also deploy it on AWS or Azure to test those services.
+
+## Built With
+
+```
+Python
+Flask
+Pytesseract
+OpenCV
+Bootstrap
+Docker
+
+```
+
+## Acknowledgments
+
+I would ike to thank Matt Berseth and Robert March of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  I can finally begin integrating development and data science in a meaningful way.
+
