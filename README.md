@@ -20,15 +20,13 @@ You can clone this repository or download a zip file, build and run the Docker i
 ```
 $ docker build -t ocr-tesseract-docker .
 $ docker run -d -p 5000:5000 ocr-tesseract-docker
-
 ```
 
 OR you can pull and/or run the Docker image from my repository on Docker Hub
 
 ```
 docker pull ricktorzynski/ocr-tesseract-docker
-docker run ricktorzynski/ocr-tesseract-docker
-
+docker run -d -p 5000:5000 ricktorzynski/ocr-tesseract-docker
 ```
 Then open up browser to http://localhost:5000
 
@@ -39,7 +37,6 @@ https://floating-castle-16480.herokuapp.com/
 Again, I can't guarantee that this will work - I will also deploy it on AWS or Azure to test those services.
 
 ## Built With
-
 ```
 Python
 Flask
@@ -47,7 +44,6 @@ Pytesseract
 OpenCV
 Bootstrap
 Docker
-
 ```
 
 ## Acknowledgments
