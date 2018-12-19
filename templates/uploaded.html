@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<p class="text-left">{{ fname }} successfully uploaded.</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="image-container">
+            <p class="text-left">Original Image</p>     
+            <a href="/static/uploads/{{ fname }}" target="_new"><img src="/static/uploads/{{ fname }}" class="upload-image-thumb"></a>
+        </div>
+        <div class="upload-form">
+            <p class="text-left">Upload another?</p>
+            <form action = "http://localhost:5000/uploader" method = "POST" 
+                              enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>
+        </div>        
+    </div>
+    <div class="col-md-6 ocr-text">
+        <p class="text-left">OCR Text from processed Image</p>
+        <textarea cols="60" rows="60">{{ displaytext }}</textarea>
+    </div>
+</div>  
+{% endblock %}
