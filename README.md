@@ -48,5 +48,5 @@ Docker
 
 ## Acknowledgments
 
-I would ike to thank Matt Berseth and Robert March of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  I can finally begin integrating development and data science in a meaningful way.
+I would like to thank Matt Berseth and Robert March of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  I can finally begin integrating development and data science in a meaningful way.
 
