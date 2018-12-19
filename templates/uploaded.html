@@ -3,7 +3,7 @@
 {% block content %}
 <p class="text-left">{{ fname }} successfully uploaded.</p>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-5">
         <div class="image-container">
             <p class="text-left">Original Image</p>     
             <a href="/static/uploads/{{ fname }}" target="_new"><img src="/static/uploads/{{ fname }}" class="upload-image-thumb"></a>
@@ -17,9 +17,9 @@
             </form>
         </div>        
     </div>
-    <div class="col-md-6 ocr-text">
+    <div class="col-md-7 ocr-text">
         <p class="text-left">OCR Text from processed Image</p>
-        <textarea cols="60" rows="60">{{ displaytext }}</textarea>
+        <textarea cols="80" rows="60">{{ displaytext }}</textarea>
     </div>
 </div>  
 {% endblock %}
