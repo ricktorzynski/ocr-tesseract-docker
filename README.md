@@ -33,9 +33,9 @@ Then open up browser to http://localhost:5000
 You can use these images to test it - these are photos of a job posting with NLP Logix:
 
 ```
-https://www.torzyn.com/ocr/senior_python_developer_nlplogix1.jpg
-https://www.torzyn.com/ocr/senior_python_developer_nlplogix2.jpg
-https://www.torzyn.com/ocr/senior_python_developer_nlplogix3.jpg
+[Job Posting 1](https://www.torzyn.com/ocr/senior_python_developer_nlplogix1.jpg)
+[Job Posting 2](https://www.torzyn.com/ocr/senior_python_developer_nlplogix2.jpg)
+[Job Posting 3](https://www.torzyn.com/ocr/senior_python_developer_nlplogix3.jpg)
 ```
 I have also deployed it to Heroku, but free account only allows 512MB of memory and this can be exceeded by the app.  But here is a URL:
 
