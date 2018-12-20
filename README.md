@@ -14,7 +14,7 @@ Git Bash (on Windows)
 Terminal (Linux or Mac)
 ```
 
-### Installing
+### Installing and Running
 
 You can clone this repository or download a zip file, build and run the Docker image.
 ```
@@ -30,6 +30,13 @@ docker run -d -p 5000:5000 ricktorzynski/ocr-tesseract-docker
 ```
 Then open up browser to http://localhost:5000
 
+You can use these images to test it - these are photos of a job posting with NLP Logix:
+
+```
+https://www.torzyn.com/ocr/senior_python_developer_nlplogix1.jpg
+https://www.torzyn.com/ocr/senior_python_developer_nlplogix2.jpg
+https://www.torzyn.com/ocr/senior_python_developer_nlplogix3.jpg
+```
 I have also deployed it to Heroku, but free account only allows 512MB of memory and this can be exceeded by the app.  But here is a URL:
 
 https://floating-castle-16480.herokuapp.com/
