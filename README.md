@@ -32,15 +32,13 @@ Then open up browser to http://localhost:5000
 
 You can use these images to test it - these are photos of a job posting with NLP Logix:
 
-* [Job Posting 1](https://www.torzyn.com/ocr/senior_python_developer_nlplogix1.jpg)
-* [Job Posting 2](https://www.torzyn.com/ocr/senior_python_developer_nlplogix2.jpg)
-* [Job Posting 3](https://www.torzyn.com/ocr/senior_python_developer_nlplogix3.jpg)
+* [Job Posting 1](https://www.torzyn.com/ocr/senior_python_developer_nlplogix1_sm.jpg)
+* [Job Posting 2](https://www.torzyn.com/ocr/senior_python_developer_nlplogix2_sm.jpg)
+* [Job Posting 3](https://www.torzyn.com/ocr/senior_python_developer_nlplogix3_sm.jpg)
 
-I have also deployed it to Heroku, but free account only allows 512MB of memory and this can be exceeded by the app.  But here is a URL:
+## Deployed to AWS Elastic Beanstalk
 
-https://floating-castle-16480.herokuapp.com/
-
-Again, I can't guarantee that this will work - I will also deploy it on AWS or Azure to test those services.
+http://ocr-tesseract-docker-aws-dev.us-east-1.elasticbeanstalk.com/
 
 ## Built With
 ```
