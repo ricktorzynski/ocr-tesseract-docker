@@ -13,6 +13,7 @@ __source__ = ''
 app = Flask(__name__)
 UPLOAD_FOLDER = './static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
+app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 
 @app.route("/")
 def index():
@@ -57,4 +58,4 @@ def upload_file():
       return render_template("uploaded.html", displaytext=text, fname=filename)
 
 if __name__ == '__main__':
-  app.run(debug=True,host='0.0.0.0')
+   app.run(host="0.0.0.0", port=5000, debug=True)
