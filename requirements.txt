@@ -3,7 +3,7 @@ Click==7.0
 Flask==1.0.2
 gunicorn==19.9.0
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2>=2.10.1
 MarkupSafe==1.1.0
 numpy==1.15.4
 opencv-contrib-python==3.4.4.19
