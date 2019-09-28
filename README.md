@@ -1,5 +1,26 @@
+# Refresh
+I am using this wonderful example form ricktorzynski to incrementally improve this container and learn more about how to properly deploy modified docker images and improve the standards of a docker/container based project.
+
+My first objectives:
+1. upgrade the container with uwsgi
+2. slim down the interface to make it more user friendly for robots like me.
+
+To get this container loaded currently it must be built.
+```
+git clone https://github.com/nogasgofast/ocr-tesseract-docker.git
+cd ocr-tesseract-docker/
+docker build . -t ocr-uwsgi-flask:test1
+docker run -d -p 8080:8080/tcp -p 9191:9191/tcp ocr-uwsgi-flask:test1
+```
+## Next update
+1. switch to alpine linux-nginx-uwsgi-flask stack
+This has the benofit os giving us some request handling features you don't normally
+get with plain uwsgi. But it's more about making the stack robust.
+
++++++ Original Text +++++
+
 # OCR Tesseract Docker
-Allows upload of an image for OCR using Tesseract and deployed using Docker.  This uses Flask, a light weight web server framework - but for development purposes only.  OpenCV is used to reduce noise in the image for better processing by pytesseract.  Uploads on AWS are limited to 2MB - below are 3 images of a job posting taken on a Pixel 2XL phone, and reduced in size using Gimp by adjusting quality. 
+Allows upload of an image for OCR using Tesseract and deployed using Docker.  This uses Flask, a light weight web server framework - but for development purposes only.  OpenCV is used to reduce noise in the image for better processing by pytesseract.  Uploads on AWS are limited to 2MB - below are 3 images of a job posting taken on a Pixel 2XL phone, and reduced in size using Gimp by adjusting quality.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -54,7 +75,7 @@ Docker
 
 ## Resources
 
-Here are some helpful resources on the web that I used for this project. 
+Here are some helpful resources on the web that I used for this project.
 
 * [Deep Learning based Text Recognition (OCR) using Tesseract and OpenCV](https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/)
 * [Using Tesseract OCR with Python](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/)
@@ -64,4 +85,3 @@ Here are some helpful resources on the web that I used for this project.
 ## Acknowledgments
 
 I would like to thank Matt Berseth and Robert Marsh of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  I can finally begin integrating development and data science in a meaningful way.
-
