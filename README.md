@@ -12,6 +12,7 @@ cd ocr-tesseract-docker/
 docker build . -t ocr-uwsgi-flask:test1
 docker run -d -p 8080:8080/tcp -p 9191:9191/tcp ocr-uwsgi-flask:test1
 ```
+
 ## Next update
 1. switch to alpine linux-nginx-uwsgi-flask stack
 This has the benofit os giving us some request handling features you don't normally
