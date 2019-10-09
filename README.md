@@ -1,22 +1,24 @@
 # Refresh
-I am using this wonderful example form ricktorzynski to incrementally improve this container and learn more about how to properly deploy modified docker images and improve the standards of a docker/container based project.
-
-My first objectives:
-1. upgrade the container with uwsgi
-2. slim down the interface to make it more user friendly for robots like me.
+I am using this wonderful example form ricktorzynski to incrementally improve this container and learn more about how to properly deploy/modify docker images.
 
 To get this container loaded currently it must be built.
 ```
 git clone https://github.com/nogasgofast/ocr-tesseract-docker.git
 cd ocr-tesseract-docker/
-docker build . -t ocr-uwsgi-flask:test1
-docker run -d -p 8080:8080/tcp -p 9191:9191/tcp ocr-uwsgi-flask:test1
+docker build . -t ocr-uwsgi-flask:test2
+docker run -d -p 8080:80/tcp ocr-uwsgi-flask:test2
 ```
+running curl http://localhost:8080
+should produce some html output. You know it's working then!
+<h1 class="title">OCR Using Tesseract via Docker</h1>
 
-## Next update
-1. switch to alpine linux-nginx-uwsgi-flask stack
-This has the benofit os giving us some request handling features you don't normally
-get with plain uwsgi. But it's more about making the stack robust.
+## NOTES
+1. This setup is not compatible with alpine linux as some of the python
+packages are not supported there yet.
+2. I've paired down the requirements file as much as possible.
+3. Not much was required in the Docker file as most of the configuration is
+taken care of by the base image used tiangolo/uwsgi-nginx-flask:python3.7 at
+the time of this writing.
 
 +++++ Original Text +++++
 

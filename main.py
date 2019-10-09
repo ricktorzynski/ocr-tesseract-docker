@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, Response
 from werkzeug import secure_filename
 import os
-import sys
 from PIL import Image
 import pytesseract
-import argparse
 import cv2
 
 __author__ = 'Rick Torzynski <ricktorzynski@gmail.com>'
@@ -17,7 +15,7 @@ app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 
 @app.route("/")
 def index():
-  return render_template("index.html")
+  return render_template("layout.html")
 
 @app.route('/uploader', methods = ['GET', 'POST'])
 def upload_file():
