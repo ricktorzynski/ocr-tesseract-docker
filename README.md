@@ -39,8 +39,7 @@ You can use these images to test it - these are photos of a job posting:
 
 ## Deployed to AWS Elastic Beanstalk
 
-This app has been deployed to AWS Elastic Beanstalk
-http://ocr-tesseract-docker-aws-dev.us-east-1.elasticbeanstalk.com/
+This app was deployed to AWS Elastic Beanstalk, but is no longer available.
 
 ## Built With
 ```
@@ -63,5 +62,5 @@ Here are some helpful resources on the web that I used for this project.
 
 ## Acknowledgments
 
-I would like to thank Matt Berseth and Robert Marsh of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  I can finally begin integrating development and data science in a meaningful way.
+I would like to thank Matt Berseth and Robert Marsh of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  
 
