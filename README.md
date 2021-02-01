@@ -62,5 +62,5 @@ Here are some helpful resources on the web that I used for this project.
 
 ## Acknowledgments
 
-I would like to thank Matt Berseth and Robert Marsh of NLP Logix for inspiring me to build this application - I have learned a great deal in a short amount of time.  
+I would like to thank Matt Berseth and Robert Marsh of NLP Logix for inspiring me to build this application.  
 
