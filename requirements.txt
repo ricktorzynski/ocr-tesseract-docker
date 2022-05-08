@@ -5,7 +5,7 @@ gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2>=2.10.1
 MarkupSafe==1.1.0
-numpy>1.15.4
+numpy>1.21
 opencv-contrib-python>=4.2.0.32
 pillow>=6.2.0
 pytesseract>=0.3
