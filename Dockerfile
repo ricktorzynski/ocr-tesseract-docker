@@ -1,7 +1,16 @@
 FROM ubuntu:latest
 MAINTAINER Rick Torzynski "ricktorzynski@gmail.com"
+
+# Set timezone:
+RUN ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime && echo $CONTAINER_TIMEZONE > /etc/timezone
+# Install dependencies:
+RUN apt-get update && apt-get install -y tzdata
+
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential
+RUN apt-get install -y software-properties-common gcc
+RUN add-apt-repository -y ppa:deadsnakes/ppa
+RUN apt-get update
+RUN apt-get install -y python3.8 python3-distutils python3-pip python3-apt
 RUN apt update && apt install -y libsm6 libxext6
 RUN apt-get -y install tesseract-ocr
 COPY . /app
@@ -10,5 +19,5 @@ RUN pip install pillow
 RUN pip install pytesseract
 RUN pip install opencv-contrib-python
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]
 CMD ["app.py"]
