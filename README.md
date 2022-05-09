@@ -1,6 +1,9 @@
 # OCR Tesseract Docker
 Allows upload of an image for OCR using Tesseract and deployed using Docker.  This uses Flask, a light weight web server framework - but for development purposes only.  OpenCV is used to reduce noise in the image for better processing by pytesseract.  Uploads on AWS are limited to 2MB - below are 3 images of a job posting taken on a Pixel 2XL phone, and reduced in size using Gimp by adjusting quality. 
 
+## Updated to Python3 and Ubuntu
+May9, 2022 - Due to Python 2 reaching end-of-life, I have updated this app to Python 3.6 to get everything working again.  Pytesseract no longer supports python 2.7, so that is the main reason for updating it to Python 3.6.
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
