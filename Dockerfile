@@ -1,5 +1,3 @@
-
-  
 FROM ubuntu:18.04
 MAINTAINER Rick Torzynski "ricktorzynski@gmail.com"
 
@@ -13,7 +11,6 @@ RUN apt-get update \
   && pip3 --no-cache-dir install --upgrade pip \
   && rm -rf /var/lib/apt/lists/*
 
-
 RUN apt update \
   && apt-get install ffmpeg libsm6 libxext6 -y
 RUN pip3 install pytesseract
@@ -23,7 +20,7 @@ RUN pip3 install pillow
 COPY . /app
 WORKDIR /app
 
-
 RUN pip install -r requirements.txt
+
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
